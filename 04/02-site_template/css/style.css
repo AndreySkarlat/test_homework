@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: ultra-condensed;
+
+}
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+/* HEADER TOP */
+
+.header_top {
+    background: -moz-linear-gradient(90deg, #9b0c4e 0%, #b90b69 40%, #b90b69 99%, #9b0c4e 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9b0c4e), color-stop(1%, #b90b69), color-stop(60%, #b90b69), color-stop(100%, #9b0c4e)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, #9b0c4e 0%, #b90b69 40%, #b90b69 99%, #9b0c4e 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, #9b0c4e 0%, #b90b69 40%, #b90b69 99%, #9b0c4e 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, #9b0c4e 0%, #b90b69 40%, #b90b69 99%, #9b0c4e 100%); /* ie10+ */
+    background: linear-gradient(0deg, #9b0c4e 0%, #b90b69 40%, #b90b69 99%, #9b0c4e 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0c4e', endColorstr='#9b0c4e',GradientType=0 ); /* ie6-9 */
+}
+
+#main_menu {
+    list-style: none;
+}
+
+#main_menu li {
+    display: inline-block;  
+    border-right: 1px solid #000; 
+    
+}
+
+#main_menu li a {
+    display: inline-block;
+    text-decoration: none;  
+    margin: 0 0 0 -4px;
+    padding: 0 30px;
+    color: #fff;
+    height: 47px;
+    line-height: 47px;
+    font-size: 13px;
+}
+
+#main_menu li a:hover {
+   background-color: #770444;
+}
+
+/* HEADER BOTTOM */
+
+.header_bottom {
+    background-color: #000;
+    height: 261px;
+    padding: 1px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 46px;
+    font-weight: 100;
+    letter-spacing: -2.5px;
+    margin: 90px 0 0 0;
+}
+
+h4 {
+    color: #b90b69;
+    font-weight: 100;
+    letter-spacing: -2px;
+}
+
+.header_bottom .container {
+    height: 260px;
+    background-image: url('../img/flower.jpg');
+    background-position: right 50px top;
+    background-repeat: no-repeat;
+    padding-top: 1px;
+}
+
+/* MAIN CONTAINER */
+
+main {
+    margin: 30px 0;
+}
+
+#main {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fff;
+    width: 420px;
+    height: 750px;
+}
+
+#sidebar_1 {
+    margin: 0 -4px;
+    display: inline-block;
+    vertical-align: top;
+    background-color:#f2f2f2;
+    width: 250px;
+    height: 750px;
+}
+
+#sidebar_2 {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fff;
+    width: 229px;
+    height: 750px;
+}
+
+/* MAIN */
+
+h3 {
+    color: #b51969;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: -2.3px;
+    margin: 24px 0 0 15px;
+}
+
+h6 {
+    color: #dcd8d5;
+    font-size: 8px;
+    margin: 12px 15px;
+}
+
+p {
+    color: #666a71;
+    font-size: 13px;
+    text-align: justify;
+    line-height: 24px;
+    margin: 24px 24px 0 14px;
+}
+
+.color {
+    color: #860461;
+}
+
+.link {
+    text-decoration: none;
+    color: #860461;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 0 14px 0 0;
+}
+
+.link_container {
+    margin: 33px 0 0 15px;
+}
+
+.tags {
+    background-color: #f2f2f2;
+}
+
+.tags p {
+    font-size: 10px;
+    letter-spacing: 0.1px;
+}
+
+/* SIDEBAR */
+
+.h4 {
+    margin: 18px 0 18px 18px;
+    letter-spacing: -1.3px;
+}
+
+h5 {
+    display: inline-block;
+    margin: 10px 20px;
+    background-color: #bb086b;
+    padding: 2px 10px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+    letter-spacing: 0.1px;
+}
+
+.sidebar_text {
+    margin: 14px 24px 0 20px;
+    line-height: 18px;
+}
+
+hr {
+    border-bottom: 0.5px solid #e7e7e7;
+    opacity: 20%;
+    margin: 18px 14px;
+}
+
+.ul_text li {
+    font-size: 10px;
+    margin: 21px 16px 0px 37px;
+    letter-spacing: -0.1px;
+    line-height: 2px;
+    color: #bb086b;
+}
+
+.color_number {
+    color: #666a71;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 12px 0 100px 0;
+}
+
+.footer_content {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+.footer_content_pink {
+    margin: 0;
+    padding: 2px 8px;
+    font-size: 10px;
+}
