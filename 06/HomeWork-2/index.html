@@ -10,56 +10,67 @@
 </head>
 
 <body>
-    <header>
-        <h1>CSS Diner Shopping List</h1>
-        <p>Let's go to the mall!</p>
-    </header>
-    <main>
-        <div class="container">
-            <ul>
-                <li>
-                    <label class="btn" for="1">
-                        <input id="1" type="checkbox">
-                        <span class="content"> A lot of pickles <span class="sub">( for the next lessons about
-                                CSS )</span></span>
-                    </label>
-                </li>
-                <li>
-                    <label class="btn" for="2">
-                        <input id="2" type="checkbox">
-                        <span class="content"> 10 apples <span class="sub">( for more CSS manipulations
-                                )</span></span>
-                    </label>
-                </li>
-                <li>
-                    <label class="btn" for="3">
-                        <input id="3" type="checkbox">
-                        <span class="content"> 20 oranges <span class="sub">( because they are
-                                awesome )</span></span></label>
-                </li>
-                <li>
-                    <label class="btn" for="4">
-                        <input id="4" type="checkbox">
-                        <span class="content"> 13 plates <span class="sub">( hm... they always
-                                disappear )</span></span></label>
-                </li>
-                <li>
-                    <label class="btn" for="5">
-                        <input id="5" type="checkbox">
-                        <span class="content"> 15 bentos</span></label>
-                </li>
-                <li>
-                    <label class="btn" for="6">
-                        <input id="6" type="checkbox">
-                        <span class="content"> 1 bottle of Sake ˆ_ˆ <span class="sub">( for my
-                                friends )</span></span></label>
-                </li>
-            </ul>
-            <div class="bon_appetit">
-                <p>Bon appetit :)</p>
+    <div class="wrapper">
+        <header>
+            <h1>CSS Diner Shopping List</h1>
+            <p>Let's go to the mall!</p>
+        </header>
+        <main>
+            <div class="container">
+                <ul class="products_list">
+                    <li>
+                        <label for="pickles">
+                            <input id="pickles" type="checkbox" name="product[]" value="pickles">
+                            <span class="label line"> A lot of pickles
+                                <span class="sub">( for the next lessons about CSS )</span>
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="apples">
+                            <input id="apples" type="checkbox" name="product[]" value="apples">
+                            <span class="label line"> 10 apples
+                                <span class="sub">( for more CSS manipulations )</span>
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="oranges">
+                            <input id="oranges" type="checkbox" name="product[]" value="oranges">
+                            <span class="label line"> 20 oranges
+                                <span class="sub">( because they are awesome )</span>
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="plates">
+                            <input id="plates" type="checkbox" name="product[]" value="plates">
+                            <span class="label line"> 13 plates
+                                <span class="sub">( hm... they always disappear )</span>
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="bentos">
+                            <input id="bentos" type="checkbox" name="product[]" value="bentos">
+                            <span class="label line"> 15 bentos</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="sake">
+                            <input id="sake" type="checkbox">
+                            <span class="label line"> 1 bottle of Sake ˆ_ˆ
+                                <span class="sub">( for my friends )</span>
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+                <div class="bon_appetit">
+                    <p>Bon appetit :)</p>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 
 </html>
