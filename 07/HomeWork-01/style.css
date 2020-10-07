@@ -119,7 +119,7 @@ li {
 .item_1:hover .title,
 .item_1:hover .text_item {
     background-color: #0ec8cb;
-    border: 1px solid #0ac6c9;
+    border-color: #0ac6c9;
     background-position: 3px 4px;
     color: #fff;
 }
@@ -130,7 +130,7 @@ li {
 .item_2:hover .title,
 .item_2:hover .text_item {
     background-color: #0ec8cb;
-    border: 1px solid #0ac6c9;
+    border-color: #0ac6c9;
     background-position: -231px 4px;
     color: #fff;
 }
@@ -141,7 +141,7 @@ li {
 .item_3:hover .title,
 .item_3:hover .text_item {
     background-color: #0ec8cb;
-    border: 1px solid #0ac6c9;
+    border-color: #0ac6c9;
     background-position: -466px 4px;
     color: #fff;
 }
@@ -152,7 +152,7 @@ li {
 .item_4:hover .title,
 .item_4:hover .text_item {
     background-color: #0ec8cb;
-    border: 1px solid #0ac6c9;
+    border-color: #0ac6c9;
     background-position: -701px 4px;
     color: #fff;
 }
