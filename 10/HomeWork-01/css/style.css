@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f6f6f6;
+}
+
+.container {
+    width: 1170px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+    color: #3c3c3c;
+    margin-bottom: 53px;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 4px;
+    background-color: #dddbdb;
+    top: 55px;
+    left: calc(50% - 22.333px);
+}
+
+p {
+    font-weight: 300;
+    font-size: 16px;
+    color: #3c3c3c;
+    padding: 0 300px;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+.item_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.item {
+    width: 270px;
+    height: 326px;
+    position: relative;
+    background-color: #f6f6f6;
+}
+
+.item .photo img,
+.img_back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 268px;
+}
+
+.item .photo img {
+    transition: all .2s ease;
+    z-index: 1;
+}
+
+.item .photo .img_back {
+    background-color: #18b5dc;
+    z-index: 0;
+}
+
+.photo:hover img {
+    transform: scaleX(0);
+}
+
+.soc_cont {
+    transition: all .2s ease;
+    width: 100%;
+    height: 268px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    background-color: #5ecbe7;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 4px;
+}
+
+.photo .img_back li:hover {
+    transform: scale(1.3);
+}
+
+li svg path {
+    fill: #ffffff;
+}
+
+.name {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #282528;
+}
+
+.profession {
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #646464;
+}
