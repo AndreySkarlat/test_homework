@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body">
+    <div class="body__bg"></div>
+    <div class="body__bg bg2"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <a class="logo__link" href="/">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <nav class="header__menu">
+                <ul class="main-menu">
+                    <li class="main-menu__item menu-item">
+                        <a href="#" class="menu-item__link">Lifestyle</a>
+                    </li>
+                    <li class="main-menu__item menu-item">
+                        <a href="#" class="menu-item__link main-menu__item--active">Running</a>
+                    </li>
+                    <li class="main-menu__item menu-item">
+                        <a href="#" class="menu-item__link">Football</a>
+                    </li>
+                    <li class="main-menu__item menu-item">
+                        <a href="#" class="menu-item__link">Skateboarding</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__hamburger">
+                <a href="#" class="hamburger">
+                    <span class="hamburger__icon"></span>
+                </a>
+            </div>
+        </header>
+        <main class="content">
+            <div class="product-card">
+                <div class="product-card__images product-images">
+                    <div class="product-images__main">
+                        <img src="img/prod-main.png" alt="">
+                    </div>
+                    <div class="product-images__thumbs">
+                        <ul class="thumbs">
+                            <li class="thumbs__item">
+                                <a href="#">
+                                    <div class="thumbs__link thumbs__link__img1"></div>
+                                </a>
+                            </li>
+                            <li class="thumbs__item">
+                                <a href="#">
+                                    <div class="thumbs__link thumbs__link__img2"></div>
+                                </a>
+                            </li>
+                            <li class="thumbs__item">
+                                <a href="#">
+                                    <div class="thumbs__link thumbs__link__img3"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-card__plus">+</div>
+                </div>
+                <div class="product-card__info product-info">
+                    <div class="product-card__plus product-info__plus">+</div>
+                    <div class="product-info__new">new</div>
+                    <div class="product-info__tagline">THE <span class="tagline__violet">RUNNING</span> HAS JUST BEGUN</div>
+                    <div class="product-info__huarache">Huarache
+                        <div class="huarache__rating">
+                            <span class="active">★</span>
+                            <span class="active">★</span>
+                            <span class="active">★</span>
+                            <span class="active">★</span>
+                            <span>★</span>
+                        </div>
+                    </div>
+                    <div class="product-info__price">$&nbsp;200</div>
+                    <div class="product-info__size">Size</div>
+                    <div class="size">
+                        <input id="size-7" type="radio" name="size" value="7" checked>
+                        <label for="size-7">&nbsp;7&nbsp;</label>
+                    </div>
+                    <div class="size">
+                        <input id="size-8" type="radio" name="size" value="8">
+                        <label for="size-8">&nbsp;8&nbsp;</label>
+                    </div>
+                    <div class="size">
+                        <input id="size-9" type="radio" name="size" value="9">
+                        <label for="size-9">&nbsp;9&nbsp;</label>
+                    </div>
+                    <div class="size">
+                        <input id="size-10" type="radio" name="size" value="10" checked>
+                        <label for="size-10">10</label>
+                    </div>
+                    <div class="size">
+                        <input id="size-11" type="radio" name="size" value="11">
+                        <label for="size-11">11</label>
+                    </div>
+                    <button class="product-info__button" type="button">add to cart</button>
+                    <button class="product-info__button" type="button">wishlist</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
