@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="modal__flex">
+            <div class="modal__panel">
+                <div class="tabs modal__tabd">
+                    <ul class="tabs__nav">
+                        <li class="tabs__item">
+                            <a href="#sign" class="tabs__link tabs__link--active">Sign in</a>
+                        </li>
+                        <li class="tabs__item">
+                            <a href="#join" class="tabs__link">Join us</a>
+                        </li>
+                    </ul>
+                    <div class="tabs__body">
+                        <div class="tabs__content" id="sign">
+                            <form action="#" method="GET">
+                                <div class="form">
+                                    <div class="form__controls">
+                                        <label class="form__label" for="Username">Username</label>
+                                        <input class="form__input" minlength="3" type="text" name="Username" id="Username">
+                                        <div class="form__error">Must be at least 2 characters long.</div>
+                                    </div>
+                                    <div class="form__controls">
+                                        <label class="form__label" for="Password">Password</label>
+                                        <input class="form__input" required type="password" name="Password" id="Password">
+                                        <div class="form__error">This field is required.</div>
+                                    </div>
+                                    <div class="form__controls form__controls--checkbox">
+                                        <input checked type="checkbox" name="keep" id="keep">
+                                        <label class="form__label form__label--checkbox" for="keep">
+                                        <span class="form__checkbox">&#10004;</span>
+                                        Keep me signed in
+                                    </label>
+                                    </div>
+                                    <div class="form__controls form__controls--submit">
+                                        <button type="submit" class="btn">Sign in</button>
+                                    </div>
+                                    <div class="form__flex">
+                                        <a href="#" class="form__link">Forgot password</a>
+                                        <a href="#join" class="form__link">Creat an account</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tabs__content" id="join">
+                            <form action="#" method="GET">
+                                <div class="form">
+                                    <div class="form__controls">
+                                        <label class="form__label" for="UsernameJoin">Username</label>
+                                        <input class="form__input" minlength="3" type="text" name="UsernameJoin" id="UsernameJoin">
+                                        <div class="form__error">Must be at least 2 characters long.</div>
+                                    </div>
+                                    <div class="form__controls">
+                                        <label class="form__label" for="PasswordJoin">Password</label>
+                                        <input class="form__input" required type="password" name="PasswordJoin" id="PasswordJoin">
+                                        <div class="form__error">This field is required.</div>
+                                    </div>
+                                    <div class="form__controls">
+                                        <label class="form__label" for="RepeatPasswordJoin">Password</label>
+                                        <input class="form__input" required type="password" name="RepeatPasswordJoin" id="RepeatPasswordJoin">
+                                        <div class="form__error">This field is required.</div>
+                                    </div>
+                                    <div class="form__controls form__controls--submit">
+                                        <button type="submit" class="btn">Join in</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

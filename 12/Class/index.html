@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="assets/plugins/tooltipster/css/tooltipster.main.min.css">
+    <link rel="stylesheet" href="assets/plugins/tooltipster/css/tooltipster.bundle.min.css">
+    <link rel="stylesheet" href="assets/fonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="form_wrap">
+            <form action="#" method="POST">
+                <div class="form_top">
+                    <div class="form_title">
+                        <h3>Harold Finch <i class="mdi mdi-account-circle"></i></h3>
+                        <div class="subtitle">Your total</div>
+                    </div>
+                    <div class="form_price">$88</div>
+                </div>
+                <div class="form_body">
+                    <div class="form_row">
+                        <div class="form_col">
+                            <label for="card_num">Credit Card Number</label>
+                            <input type="text" name="card" id="card_num" required>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_col wide_col">
+                            <label for="exp_month">Experation date</label>
+                            <select id="exp_month" required>
+                                <option value="" disabled selected hidden>Month</option>
+                                <option>June</option>
+                                <option>Jule</option>
+                            </select>
+                        </div>
+                        <div class="form_col small_col">
+                            <label for="exp_year">&nbsp;</label>
+                            <select id="exp_year" required>
+                                <option value="" disabled selected hidden>Year</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_col small_col">
+                            <label for="cvv">CVV</label>
+                            <input id="cvv" name="cvv" type="password" required>
+                        </div>
+
+                        <div class="form_col wide_col">
+                            <p class="hint">3 or 4 digits - <a href="#" class="form_link tooltip" title="Ex: 123, 5555">view example</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons_block">
+                    <button type="submit" class="btn">Pay</button>
+                    <div class="cancel">
+                        <a href="#" class="form_link">Cancel order</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/jquery.mask.min.js"></script>
+    <script src="assets/plugins/styler/jquery.formstyler.min.js"></script>
+    <script src="assets/plugins/tooltipster/js/tooltipster.bundle.min.js"></script>
+    <script src="assets/js/onload.js" defer></script>
+</body>
+
+</html>

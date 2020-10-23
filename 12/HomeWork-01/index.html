@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/plugins/styler/jquery.formstyler.theme.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p class="contact__p">For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
+            <div class="contact__flex-cont">
+                <form class="form" action="#" method="POST">
+
+                    <div class="form__item">
+                        <input class="form__input" type="text" name="name" placeholder="Your name..." minlength="2" required>
+                        <div class="form__error">name cannot be shorter than 2 characters</div>
+                    </div>
+                    <div class="form__item">
+                        <input class="form__input" type="email" name="email" placeholder="Your email..." required>
+                    </div>
+                    <div class="form__item">
+                        <input class="form__input" type="tel" name="tel" placeholder="Your phone number..." id="tel" required>
+
+                    </div>
+                    <div class="form__item">
+                        <textarea class="form__textarea" name="text" maxlength="300" placeholder="Your message..."></textarea>
+                    </div>
+
+                </form>
+
+                <ul class="contact__info info">
+                    <li class="info__item">
+                        <div class="info__heading">address</div>
+                        <a class="info__link" href="https://g.page/BeetrootAcademyMykolaiv?share">123 City name, Street, City, Country</a>
+                    </li>
+                    <li class="info__item">
+                        <div class="info__heading">email</div>
+                        <a class="info__link" href="mailto:cahee@domain.com">cahee@domain.com</a>
+                    </li>
+                    <li>
+                        <div class="info__heading">phone</div>
+                        <a class="info__link" href="tel:0123456789">+012 345 6789</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer__flex">
+                <div class="footer__text">© 2015 Company. All right reserved.</div>
+                <img class="footer__img" src="assets/img/logo_small.png" alt="">
+                <div class="footer__text fs15">Made with <span class="red-text">love</span> by Auskteez</div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/jquery.mask.min.js"></script>
+    <script src="assets/js/onload.js" defer></script>
+</body>
+
+</html>
