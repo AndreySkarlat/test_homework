@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: -moz-linear-gradient(53deg, rgba(153, 218, 255, 1) 0%, rgba(0, 128, 128, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(153, 218, 255, 1)), color-stop(100%, rgba(0, 128, 128, 1)));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(53deg, rgba(153, 218, 255, 1) 0%, rgba(0, 128, 128, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(53deg, rgba(153, 218, 255, 1) 0%, rgba(0, 128, 128, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(53deg, rgba(153, 218, 255, 1) 0%, rgba(0, 128, 128, 1) 100%);
+    /* ie10+ */
+    background: linear-gradient(37deg, rgba(153, 218, 255, 1) 0%, rgba(0, 128, 128, 1) 100%);
+    /* w3c */
+}
+
+.container_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.phone {
+    width: 367px;
+    height: 777px;
+    background-color: #fff;
+    border-radius: 60px;
+    border: 5px solid #e6e6e6;
+    padding: 27px 23px 0;
+}
+
+.phone_top {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.camera {
+    width: 14px;
+    height: 14px;
+    background-color: #3e3f3f;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+}
+
+.micro {
+    width: 60px;
+    height: 7px;
+    background-color: #3e3f3f;
+    border-radius: 4px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.micro::before {
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #3e3f3f;
+    position: absolute;
+    left: -25px;
+    top: -2px;
+}
+
+.phone_screen {
+    margin-bottom: 21px;
+}
+
+.screen_top {
+    background: -moz-linear-gradient(315deg, rgba(22, 30, 62, 1) 0%, rgba(63, 149, 183, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(22, 30, 62, 1)), color-stop(100%, rgba(63, 149, 183, 1)));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(315deg, rgba(22, 30, 62, 1) 0%, rgba(63, 149, 183, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(315deg, rgba(22, 30, 62, 1) 0%, rgba(63, 149, 183, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(315deg, rgba(22, 30, 62, 1) 0%, rgba(63, 149, 183, 1) 100%);
+    /* ie10+ */
+    background: linear-gradient(135deg, rgba(22, 30, 62, 1) 0%, rgba(63, 149, 183, 1) 100%);
+    /* w3c */
+    padding: 22px 15px 11px;
+}
+
+.screen_bottom {
+    background: -moz-linear-gradient(0deg, rgba(58, 177, 213, 1) 0%, rgba(94, 193, 217, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(58, 177, 213, 1)), color-stop(100%, rgba(94, 193, 217, 1)));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(0deg, rgba(58, 177, 213, 1) 0%, rgba(94, 193, 217, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(0deg, rgba(58, 177, 213, 1) 0%, rgba(94, 193, 217, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(0deg, rgba(58, 177, 213, 1) 0%, rgba(94, 193, 217, 1) 100%);
+    /* ie10+ */
+    background: linear-gradient(90deg, rgba(58, 177, 213, 1) 0%, rgba(94, 193, 217, 1) 100%);
+    /* w3c */
+    padding: 11px 15px 23px;
+}
+
+.icons {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icons li {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 25px;
+}
+
+.icons_mb li {
+    margin-bottom: 0px;
+}
+
+.icons li svg {
+    width: 100%;
+    height: 100%;
+}
+
+.phone_button {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: relative;
+    background: -moz-linear-gradient(315deg, rgba(156, 156, 156, 1) 0%, rgba(234, 234, 234, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(156, 156, 156, 1)), color-stop(100%, rgba(234, 234, 234, 1)));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(315deg, rgba(156, 156, 156, 1) 0%, rgba(234, 234, 234, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(315deg, rgba(156, 156, 156, 1) 0%, rgba(234, 234, 234, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(315deg, rgba(156, 156, 156, 1) 0%, rgba(234, 234, 234, 1) 100%);
+    /* ie10+ */
+    background: linear-gradient(135deg, rgba(156, 156, 156, 1) 0%, rgba(234, 234, 234, 1) 100%);
+    /* w3c */
+}
+
+.button::before {
+    content: '';
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 5px;
+}
