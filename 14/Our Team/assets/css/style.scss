@@ -1,0 +1,254 @@
+    @import '_reset';
+    $yellow: #ffcc00;
+    $text_color: #333;
+    $text_grey: #666;
+    body {
+        background-color: #fff;
+        font-size: 14px;
+        color: $text_color;
+    }
+    
+    .our_team {
+        padding: 107px 0 93px;
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    
+    .title_block {
+        width: 450px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        padding-bottom: 38px;
+        .pretitle {
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            letter-spacing: .36px;
+            color: #898f8f;
+            text-transform: uppercase;
+        }
+        .title {
+            font-family: 'Roboto', sans-serif;
+            color: $yellow;
+            font-size: 60px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        &::before,
+        &::after {
+            content: '';
+            display: inline-block;
+            height: 1px;
+            background-color: $yellow;
+            position: absolute;
+            bottom: 0;
+            width: calc(50% - 15px);
+        }
+        &::before {
+            left: 0;
+        }
+        &::after {
+            right: 0;
+        }
+        .fire_icon {
+            display: inline-block;
+            width: 30px;
+            height: 20px;
+            background: url(/assets/img/icon.png) center center no-repeat;
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            margin-left: -15px;
+        }
+    }
+    
+    .team_item {
+        margin-top: 47px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 560px;
+    }
+    
+    .photo_wrap {
+        width: 50%;
+        border-right: 1px solid $yellow;
+        display: flex;
+        justify-content: flex-end;
+        padding: 90px 97px 82px 0;
+        .photo_border_1,
+        .photo_border_2 {
+            position: relative;
+            width: 388px;
+            height: 388px;
+            &::before,
+            &::after {
+                content: '';
+                display: block;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+            }
+        }
+        .photo_border_1 {
+            &::before,
+            &::after {
+                top: -15px;
+                border-top: 1px solid $yellow;
+            }
+            &::before {
+                left: -15px;
+                border-left: 1px solid $yellow;
+            }
+            &::after {
+                right: -15px;
+                border-right: 1px solid $yellow;
+            }
+        }
+        .photo_border_2 {
+            border: 1px solid $yellow;
+            img {
+                width: 100%;
+            }
+            &::before,
+            &::after {
+                bottom: -15px;
+                border-bottom: 1px solid $yellow;
+            }
+            &::before {
+                left: -15px;
+                border-left: 1px solid $yellow;
+            }
+            &::after {
+                right: -15px;
+                border-right: 1px solid $yellow;
+            }
+        }
+    }
+    
+    .info_wrap {
+        width: 50%;
+        padding: 0px 84px 0 80px;
+        text-align: center;
+        h2 {
+            padding-top: 12px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 36px;
+            letter-spacing: .73px;
+            color: $text_grey;
+            margin-bottom: 55px;
+            &::after {
+                content: '';
+                display: block;
+                position: relative;
+                width: 100px;
+                height: 1px;
+                background-color: $yellow;
+                left: calc(50% - 50px);
+                bottom: -27px;
+            }
+        }
+        h3 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            color: $text_grey;
+            margin-bottom: 30px;
+        }
+        .soc_list {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 27px;
+            .item {
+                cursor: pointer;
+                display: inline-block;
+                border: 2px solid #ccc;
+                border-radius: 50%;
+                padding: 5px;
+                margin-right: 5px;
+                width: 30px;
+                height: 30px;
+                .fab {
+                    color: #ccc;
+                }
+                &:hover,
+                &:hover .fab {
+                    background-color: #ccc;
+                    color: #fff;
+                }
+            }
+            li:hover {
+                color: $yellow;
+                cursor: pointer;
+            }
+        }
+        p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            position: relative;
+            margin-bottom: 44px;
+            &::after {
+                content: '';
+                width: 50px;
+                height: 4px;
+                display: inline-block;
+                position: absolute;
+                bottom: -25px;
+                left: calc(50% - 25px);
+                /*background-color: $yellow;*/
+                border-top: 4px dashed $yellow;
+            }
+        }
+    }
+    
+    button {
+        cursor: pointer;
+        border: 1px solid $yellow;
+        width: 120px;
+        height: 24px;
+        font-family: 'Open sans', sans-serif;
+        text-transform: uppercase;
+        color: $text_grey;
+        background: transparent;
+        &:hover {
+            color: #fff;
+            background-color: $yellow;
+        }
+    }
+    /* SLIDER */
+    
+    .bx-wrapper {
+        box-shadow: none;
+        .bx-next {
+            background: url(../img/right.png) no-repeat center center;
+            &:hover,
+            &:focus {
+                background-position: center center;
+            }
+        }
+        .bx-prev {
+            background: url(../img/left.png) no-repeat center center;
+            &:hover,
+            &:focus {
+                background-position: center center;
+            }
+        }
+    }
+    
+    .bx-wrapper .bx-pager.bx-default-pager a {
+        background-color: $yellow;
+        &:hover,
+        &.active,
+        &:focus {
+            border: 1px solid $yellow;
+            background: none;
+        }
+    }

@@ -1,18 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* GALLERY */
 
 #gallery {
     background-color: #ffe92f;
-    font-family: 'Raleway', sans-serif;
-}
-
-.container {
-    width: 90%;
-    max-width: 1170px;
-    margin: 0 auto;
 }
 
 .gallery__title {
@@ -20,7 +9,7 @@
     padding: 80px 280px 26px;
 }
 
-h2 {
+#gallery h2 {
     font-weight: 700;
     font-size: 90px;
     color: #262626;
@@ -51,7 +40,8 @@ h2 {
     margin-bottom: 36px;
 }
 
-ul>li {
+.gallery__top>.top__item,
+.gallery__bottom>.bottom__item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,29 +50,29 @@ ul>li {
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-ul>li.top__big-item {
+.gallery__top>li.top__item--big {
     width: calc(67% - 15px);
     height: 550px;
     order: 1;
     margin-left: 0;
 }
 
-ul>li.top__item {
+.gallery__top>.top__item {
     width: calc(33% - 15px);
     height: 260px;
     order: 2;
 }
 
-ul>li.bottom__item {
+.gallery__bottom>.bottom__item {
     width: calc(50% - 15px);
     height: 400px;
 }
 
-ul>li.bottom__item-1 {
+.gallery__bottom>.bottom__item-1 {
     margin-left: 0;
 }
 
-ul>li.bottom__item-2 {
+.gallery__bottom>.bottom__item-2 {
     margin-right: 0;
 }
 
@@ -90,7 +80,7 @@ ul>li.bottom__item-2 {
     text-align: center;
 }
 
-button {
+#gallery button {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -104,18 +94,17 @@ button {
     margin-bottom: 119px;
 }
 
-button:hover {
+#gallery button:hover {
     background-color: #fff;
     color: #5585a2;
 }
 
-button:focus {
+#gallery button:focus {
     outline: none;
 }
 
 #subscr {
     background: #fff url(../img/bg_subscr.jpg) center center no-repeat;
-    font-family: 'Raleway', sans-serif;
     height: 500px;
 }
 
@@ -141,11 +130,11 @@ button:focus {
     margin-bottom: 27px;
 }
 
-form {
+.subscr__form {
     display: flex;
 }
 
-input {
+.subscr__email {
     width: 666px;
     height: 55px;
     font-size: 15px;
@@ -156,16 +145,16 @@ input {
     margin-right: 30px;
 }
 
-input:focus {
+.subscr__email:focus {
     outline: none;
 }
 
-input[type="email"]::placeholder {
+.subscr__email[type="email"]::placeholder {
     color: #262626;
     opacity: 0.52;
 }
 
-input[type="email"]::-moz-placeholder {
+.subscr__email[type="email"]::-moz-placeholder {
     color: #262626;
     opacity: 0.52;
 }
@@ -187,4 +176,8 @@ input[type="email"]::-moz-placeholder {
 .subscr__btn:hover {
     background-color: #fff;
     color: #96b92c;
+}
+
+.subscr__btn:focus {
+    outline: none;
 }
