@@ -252,6 +252,8 @@ h3 {
 /* GALLERY */
 
 #gallery {
+    max-width: 1800px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -466,7 +468,7 @@ footer p {
     svg {
         display: none;
     }
-    h2 {
+    h3 {
         padding-top: 32px;
     }
 }
