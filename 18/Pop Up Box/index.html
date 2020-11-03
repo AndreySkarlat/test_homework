@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up Box</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+
+    <div class="popup__fade">
+        <div class="popup">
+            <a class="popup__close" href="#"></a>
+            <div class="popup__title">Hire Me</div>
+            <form class="popup__form" action="#" method="POST">
+                <div class="form__item">
+                    <input class="form__input" type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form__item">
+                    <input class="form__input" type="email" name="email" placeholder="Your E-Mail" required>
+                </div>
+                <div class="form__item">
+                    <textarea class="form__textarea" name="text" placeholder="Your Message"></textarea>
+                </div>
+                <button class="popup__btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/jquery.mask.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+</body>
+
+</html>
