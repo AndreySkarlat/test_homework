@@ -1,0 +1,79 @@
+/* SERVICES */
+
+#services {
+    background-color: #70bfff;
+    .servises__flex {
+        height: 100%;
+        min-height: 790px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        .servises__list {
+            width: 51.28%;
+            padding: 179px 0 0;
+            a {
+                margin: 0 auto 20px;
+            }
+            .servises-link {
+                text-decoration: none;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                width: 400px;
+                min-width: 370px;
+                height: 100px;
+                background-color: #fff;
+                box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+                .servises-link__title {
+                    padding: 0 20px;
+                    text-decoration: none;
+                    color: #262626;
+                    width: 300px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    line-height: 27px;
+                    text-align: center;
+                }
+                .servises-link__icon {
+                    width: 100px;
+                    height: 100%;
+                    border-left: 1px solid #9d9d9d;
+                }
+            }
+        }
+        .servises__title {
+            width: 48.72%;
+            text-align: right;
+            position: relative;
+            min-width: 450px;
+            div.lazy-bg.servises__title {
+                width: 100%;
+                max-width: 462px;
+                display: block;
+                position: absolute;
+                height: 100%;
+                background: center center no-repeat;
+                background-size: contain;
+                right: 0;
+                top: -32px;
+            }
+            h2 {
+                font-weight: 700;
+                font-size: 90px;
+                color: #fff;
+                position: relative;
+                top: calc(50% - 83px);
+                right: 0;
+                z-index: 1;
+            }
+        }
+    }
+}
