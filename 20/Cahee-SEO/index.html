@@ -300,16 +300,22 @@
 
                 <ul class="contact__info info">
                     <li class="info__item">
-                        <div class="info__heading">address</div>
-                        <a class="info__link" href="https://g.page/BeetrootAcademyMykolaiv?share">123 City name, Street, City, Country</a>
+                        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="info__heading">address</div>
+                        <a class="info__link" href="https://g.page/BeetrootAcademyMykolaiv?share">
+                            <span itemprop="postalCode">123</span>
+                            <span itemprop="addressRegion">City name,</span>
+                            <span itemprop="streetAddress">Street,</span>
+                            <span itemprop="addressLocality">City,</span>
+                            <span itemprop="addressCountry">Country</span>
+                        </a>
                     </li>
                     <li class="info__item">
                         <div class="info__heading">email</div>
-                        <a class="info__link" href="mailto:cahee@domain.com">cahee@domain.com</a>
+                        <a itemprop="email" class="info__link" href="mailto:cahee@domain.com">cahee@domain.com</a>
                     </li>
                     <li>
                         <div class="info__heading">phone</div>
-                        <a class="info__link" href="tel:0123456789">+012 345 6789</a>
+                        <a itemprop="telephone" class="info__link" href="tel:0123456789">+012 345 6789</a>
                     </li>
                 </ul>
 
