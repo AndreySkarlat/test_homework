@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/bg.png) top right no-repeat;
+}
+
+.conteiner {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: center;
+}
+
+.input-group,
+.form-group {
+  margin: 20px auto;
+  width: 50%;
+}
+
+.result {
+  margin: 0 auto;
+  padding-left: 14px;
+  padding-top: 20px;
+  width: 50%;
+  min-height: 40px;
+  height: 100%;
+}
+
+.btn-outline-secondary,
+.btn-secondary {
+  min-width: 60px;
+  background-color: #28a745;
+  color: #fff;
+}
+.btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:visited,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:visited {
+  background-color: #218838;
+}
+
+.fraction_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  vertical-align: super;
+}
+
+h3 {
+  text-align: center;
+}
