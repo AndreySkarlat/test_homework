@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#text-tag,
+#text-resp {
+    width: 300px;
+    height: 100%;
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #000;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+
+#resize {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    right: 0;
+    cursor: nwse-resize;
+}
