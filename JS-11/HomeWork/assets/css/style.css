@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background: url(../img/bg.jpg) no-repeat;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  padding-top: 58px;
+  letter-spacing: 3.6px;
+  font-weight: bold;
+  color: #303030;
+  margin-bottom: 10px;
+}
+
+.plus {
+  position: absolute;
+  top: 34px;
+  right: calc(50% - 400px);
+}
+
+.tr {
+  position: absolute;
+  top: 230px;
+  left: calc(50% - 612px);
+}
+
+h1 {
+  font-size: 86px;
+  font-weight: bold;
+  letter-spacing: 2.3px;
+  line-height: 1.047;
+  color: #000;
+  margin-bottom: 90px;
+}
+
+.item {
+  position: relative;
+  text-align: left;
+}
+.item img {
+  object-fit: none;
+}
+.item h2 {
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+  font-size: 28px;
+  color: #fff;
+  line-height: 0.857;
+  width: 300px;
+  display: none;
+}
+.item p {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 2;
+  display: none;
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+.item:hover img {
+  opacity: 0.1 !important;
+}
+.item:hover h2 {
+  display: inline;
+}
+.item:hover p {
+  display: inline;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  background-color: #1bf1ad;
+}
+
+.owl-nav {
+  position: relative;
+  top: -150px;
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  position: absolute;
+  bottom: 0;
+}
+.owl-nav .owl-prev span,
+.owl-nav .owl-next span {
+  display: none;
+}
+.owl-nav .owl-prev::before,
+.owl-nav .owl-next::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+}
+.owl-nav .owl-prev {
+  left: -242px;
+}
+.owl-nav .owl-prev::before {
+  background: url(../img/left.png) center center no-repeat;
+  left: 0;
+}
+.owl-nav .owl-next {
+  right: -242px;
+}
+.owl-nav .owl-next::before {
+  background: url(../img/right.png) center center no-repeat;
+  right: 0;
+}
