@@ -23,6 +23,7 @@ $(document).ready(function() {
     //news
     $("#carouselTwo").owlCarousel({
         loop: true,
+        lazyLoad: true,
         margin: 30,
         nav: true,
         dots: true,

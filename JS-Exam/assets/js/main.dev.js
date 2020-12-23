@@ -24,6 +24,7 @@ $(document).ready(function () {
 
   $("#carouselTwo").owlCarousel({
     loop: true,
+    lazyLoad: true,
     margin: 30,
     nav: true,
     dots: true,
