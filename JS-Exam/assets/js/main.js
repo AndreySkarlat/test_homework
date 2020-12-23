@@ -3,6 +3,7 @@ $(document).ready(function() {
     $('#carouselOne').owlCarousel({
         animateOut: 'slideOutDown',
         animateIn: 'flipInX',
+        lazyLoad: false,
         loop: true,
         margin: 0,
         nav: false,
@@ -23,6 +24,7 @@ $(document).ready(function() {
     //news
     $("#carouselTwo").owlCarousel({
         loop: true,
+        lazyLoad: false,
         margin: 30,
         nav: true,
         dots: true,
