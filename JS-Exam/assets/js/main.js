@@ -17,14 +17,13 @@ $(document).ready(function() {
             800: {
                 dots: true
             }
-
         }
     });
 
     //news
     $("#carouselTwo").owlCarousel({
         loop: true,
-        lazyLoad: true,
+        //lazyLoad: true,
         margin: 30,
         nav: true,
         dots: true,
@@ -171,7 +170,7 @@ $(document).ready(function() {
 
     // Lazy
     $(function() {
-        $('.lazy').lazy();
+        $('.lazy').lazyLoad();
     });
 
     //scroll

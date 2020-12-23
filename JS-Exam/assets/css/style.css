@@ -136,7 +136,7 @@ body {
   background: linear-gradient(45deg, rgba(85, 183, 255, 0.9) 0%, rgba(126, 90, 255, 0.9) 100%);
   /* w3c */
   transition: all 0.3s ease;
-  z-index: 1400;
+  z-index: 2400;
 }
 .scrolled .nav-wrap {
   height: 60px;

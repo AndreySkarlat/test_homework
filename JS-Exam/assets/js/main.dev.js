@@ -24,7 +24,7 @@ $(document).ready(function () {
 
   $("#carouselTwo").owlCarousel({
     loop: true,
-    lazyLoad: true,
+    //lazyLoad: true,
     margin: 30,
     nav: true,
     dots: true,
@@ -168,7 +168,7 @@ $(document).ready(function () {
 
 
   $(function () {
-    $('.lazy').lazy();
+    $('.lazy').lazyLoad();
   }); //scroll
 
   $("a.scrollto").on("click", function (e) {
