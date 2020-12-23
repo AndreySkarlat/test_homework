@@ -67,7 +67,7 @@ body {
     background: linear-gradient(45deg, rgba(85, 183, 255, 1) 0%, rgba(126, 90, 255, 1) 100%);
     /* w3c */
     transition: all 0.3s ease;
-    z-index: 2000;
+    z-index: 2500;
     &.opened {
         left: 0;
     }
@@ -81,7 +81,7 @@ body {
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1900;
+    z-index: 2450;
     opacity: 0;
     transition: all 0.3s ease;
     &.opened {
