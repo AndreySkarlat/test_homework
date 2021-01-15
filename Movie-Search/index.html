@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons-1.3.0/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/vanilla-toast.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                    <input type="text" class="form-control" placeholder="Enter movie title" v-model="search_query">
+                </div>
+                <div class="col-md-2 mb-2">
+                    <input type="text" class="form-control" placeholder="Year" v-model="search_year">
+                </div>
+                <div class="col-md-2 mb-2">
+                    <select class="form-select" v-model="search_type">
+                        <option value="">All</option>
+                        <option value="movie">Movie</option>
+                        <option value="series">Series</option>
+                        <option value="episode">Episode</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2 d-grid mb-2">
+                    <button id="search-btn" type="button" class="btn btn-info" v-on:click="searchMovie">Search
+                        <div class="btn-blobs">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
+                    </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                        <defs>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                                <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-12">
+                    <a href="javascript:void(0)" class="initial btn btn-outline-secondary m-1" v-on:click="toggleView(true), activeLink = 1" :class="{active: activeLink === 1}"><i class="bi-grid"></i>
+                        <div class="back"></div>
+                    </a>
+                    <a href="javascript:void(0)" class="btn btn-outline-secondary m-1" v-on:click="toggleView(false), activeLink = 2" :class="{active: activeLink === 2}"><i class="bi-justify"></i>
+                        <div class="back"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+            <div id="movie_list" class="d-flex flex-wrap justify-content-around justify-content-lg-between pt-4" :class="(blocksView?'blocks':'rows')">
+                <movie-item v-for="movie in movies_list" :item="movie"></movie-item>
+            </div>
+            <nav aria-label="Page navigation example" class="mt-4">
+                <ul class="pagination pagination-sm justify-content-center" id="pagination">
+                </ul>
+            </nav>
+            <hr>
+            <div id="fav_list" class="d-flex flex-wrap justify-content-between pt-4 blocks" :class="(btn?'active':'no-active')">
+                <button type="button" class="btn btn-info" style="background-color: #f8f9fa;" v-on:click="toggleBtn(false)"><i class="bi-heart-fill" style="color: #f8114d;"></i></button>
+                <div class="content">
+                    <movie-item v-for="movie in favorites" :item="movie">
+                    </movie-item>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" :class="{'show':showModal}" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Movie information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" v-on:click="toggleModalDetail(false)"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img style="width: 100%;" :src="movie_info.Poster" :alt="movie_info.Title">
+                            </div>
+                            <div class="col-md-8">
+                                <h5>{{movie_info.Title}}</h5>
+                                <div class="ratings_wrap mb-3" v-html="ratings"></div>
+                                <p><strong>Year: </strong> {{movie_info.Year}}</p>
+                                <p><strong>Genre: </strong>{{movie_info.Genre}}</p>
+                                <p><strong>Actors: </strong>{{movie_info.Actors}}</p>
+                                <p><strong>Country: </strong>{{movie_info.Country}}</p>
+                                <p><strong>Plot: </strong>{{movie_info.Plot}}</p>
+                                <p><strong>Released: </strong>{{movie_info.Released}}</p>
+                                <p><strong>Runtime: </strong>{{movie_info.Runtime}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="col-md-8 btn btn-primary" data-bs-dismiss="modal" v-on:click="toggleModalDetail(false)">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <template id="movie_item">
+        <div class="card mb-4">
+            <div class="img_wrap">
+            <img :src="(item.Poster!='N/A')?item.Poster:'assets/img/no_img.jpg'" class="card-img-top" alt="item.Title" v-on:click="getDetail(item.imdbID)">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title" v-on:click="getDetail(item.imdbID)">{{item.Title}}</h5>
+                <p class="card-text"><strong>Year: </strong> {{item.Year}}</p>
+                <p class="rows_cont"><strong>Type: </strong>{{item.Type}}</p>
+
+                <div class="row ps-3">
+                    <a href="javascript:void(0)" class="mb-3 col-md-8 btn btn-primary" v-on:click="getDetail(item.imdbID)">Detail</a>
+                    <a href="javascript:void(0)" class="mb-3 col-md-3 btn btn-light"  v-on:click="toggleFavorites(item)">
+                        <i :class="(item.favoritesHeart)" style="color: #f8114d;"></i>
+                </a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="assets/js/axios.min.js"></script>
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/vanilla-toast.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
