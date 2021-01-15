@@ -39,7 +39,7 @@ const app = Vue.createApp({
                 if (reset_page) {
                     this.page = 1;
                 }
-                let url = 'http://www.omdbapi.com/?apikey=' + OMDB_API_KEY + '&s=' + this.search_query + '&page=' + this.page;
+                let url = 'https://www.omdbapi.com/?apikey=' + OMDB_API_KEY + '&s=' + this.search_query + '&page=' + this.page;
                 if (this.search_year != "") {
                     url += '&y=' + this.search_year;
                 }
@@ -98,7 +98,7 @@ const app = Vue.createApp({
             this.searchMovie(false);
         },
         getDetail(id) {
-            axios.get('http://www.omdbapi.com/?apikey=' + OMDB_API_KEY + '&i=' + id)
+            axios.get('https://www.omdbapi.com/?apikey=' + OMDB_API_KEY + '&i=' + id)
                 .then((resp) => {
                     if (resp.data.Response == "True") {
                         this.movie_info = resp.data;
