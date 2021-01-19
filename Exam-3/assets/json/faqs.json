@@ -1,0 +1,25 @@
+[{
+        "id": 1,
+        "active": false,
+        "title": "What is Cannabidiol (CBD)?",
+        "details": "<p>Come on, this is a Bluth family celebration. It's no place for children.</p>"
+    },
+    {
+        "id": 2,
+        "active": false,
+        "title": "Is Hemp-Derived Cannabidiol (CBD) Legal?",
+        "details": "<p>Because CBD from hemp has no psychoactive effects, the purchase, sales, or possession of hemp CBD products are completely legal in all 50 States.</p>"
+    },
+    {
+        "id": 3,
+        "active": false,
+        "title": "Are there any negative side effects?",
+        "details": "<p>In fact, it was a box of Oscar's legally obtained medical marijuana. Primo bud. Real sticky weed. Great, now I 'm gonna smell to high heaven like a tuna melt!</p>"
+    },
+    {
+        "id": 4,
+        "active": false,
+        "title": "Do you offer a return policy?",
+        "details": "<p>In fact, it was a box of Oscar's legally obtained medical marijuana. Primo bud. Real sticky weed. Great, now I 'm gonna smell to high heaven like a tuna melt!</p>"
+    }
+]
