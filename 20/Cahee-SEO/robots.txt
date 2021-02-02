@@ -1,4 +1,0 @@
-User-agent: *
-Allow: / 
-Disallow: /assets/
-Sitemap: https://andreyskarlat.github.io/test_homework/20/Cahee-SEO/sitemap.xml
