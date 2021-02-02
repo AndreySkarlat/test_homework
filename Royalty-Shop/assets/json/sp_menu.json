@@ -1,0 +1,46 @@
+[{
+        "id": 1,
+        "img": "assets/img/menu/img_1.jpg",
+        "name": "Maecenas quis turpis suscipit",
+        "about": "Curabitur magna nisl, porttitor eget iaculis sed, ultrices ac arcu. Duis est lacus, dignissim ac faucibus id, placerat aliquam mi. Mauris eget odio enim. Nam feugiat nibh id nibh consequat, ac varius.",
+        "price": "$25",
+        "oldPrice": "$30",
+        "group": "Breakfast"
+    },
+    {
+        "id": 2,
+        "img": "assets/img/menu/img_2.jpg",
+        "name": "Maecenas quis turpis suscipit",
+        "about": "Curabitur magna nisl, porttitor eget iaculis sed, ultrices ac arcu. Duis est lacus, dignissim ac faucibus id, placerat aliquam mi. Mauris eget odio enim. Nam feugiat nibh id nibh consequat, ac varius.",
+        "price": "$15",
+        "oldPrice": "",
+        "group": "Dinner"
+    },
+    {
+        "id": 3,
+        "img": "assets/img/menu/img_3.jpg",
+        "name": "Maecenas quis turpis suscipit",
+        "about": "Curabitur magna nisl, porttitor eget iaculis sed, ultrices ac arcu. Duis est lacus, dignissim ac faucibus id, placerat aliquam mi. Mauris eget odio enim. Nam feugiat nibh id nibh consequat, ac varius.",
+        "price": "$5",
+        "oldPrice": "$10",
+        "group": "Dinner"
+    },
+    {
+        "id": 4,
+        "img": "assets/img/menu/img_4.jpg",
+        "name": "Maecenas quis turpis suscipit",
+        "about": "Curabitur magna nisl, porttitor eget iaculis sed, ultrices ac arcu. Duis est lacus, dignissim ac faucibus id, placerat aliquam mi. Mauris eget odio enim. Nam feugiat nibh id nibh consequat, ac varius.",
+        "price": "$7",
+        "oldPrice": "",
+        "group": "Breakfast"
+    },
+    {
+        "id": 5,
+        "img": "assets/img/menu/img_5.jpg",
+        "name": "Maecenas quis turpis suscipit",
+        "about": "Curabitur magna nisl, porttitor eget iaculis sed, ultrices ac arcu. Duis est lacus, dignissim ac faucibus id, placerat aliquam mi. Mauris eget odio enim. Nam feugiat nibh id nibh consequat, ac varius.",
+        "price": "$25",
+        "oldPrice": "",
+        "group": "Lunch"
+    }
+]
